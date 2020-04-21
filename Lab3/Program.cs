@@ -15,16 +15,35 @@ namespace Lab3
             // Entry Validation
             Console.WriteLine("Enter a number between 1 and 100");
             string input = Console.ReadLine();
-            int i = int.Parse(input);
+
+
+
+            int i = 0;
+
             while (validcheck == 1)
             {
-                if (input.All(char.IsDigit))
-                {
+
+                if (input.All(char.IsNumber)){
                     validcheck = 0;
                 }
-                if (i >= 1 && i <= 100)
+                else
                 {
-                    validcheck = 0;
+                    
+                    validcheck = 2;
+                }
+
+                if (validcheck != 2)
+                {
+                    i = int.Parse(input);
+
+                    if (input.All(char.IsDigit))
+                    {
+                        validcheck = 0;
+                    }
+                    if (i >= 1 && i <= 100)
+                    {
+                        validcheck = 0;
+                    }
                 }
                 else
                 {
@@ -34,7 +53,7 @@ namespace Lab3
                     i = int.Parse(input);
                 }
 
-                //OddEven Results
+           //OddEven Results
                 int oddeven = 0;
                 if (i % 2 == 0)
                 {
@@ -65,12 +84,12 @@ namespace Lab3
                     Console.WriteLine($"{name}, the number you entered {i} is more than 60 and an odd number!");
                 }
 
-                //Continue?.. entry
+            //Continue?.. entry
                 Console.WriteLine("Would you like to continue? (y/n) ");
                 string proceed = Console.ReadLine();
                 Console.WriteLine();
 
-                //Continue variable
+            //Continue variable
                 if (proceed.ToLower() == "y")
                 {
                     Console.WriteLine("Enter a number between 1 and 100");
