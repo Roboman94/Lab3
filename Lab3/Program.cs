@@ -7,7 +7,7 @@ namespace Lab3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Grand Circus Digit Validator!");
+            Console.WriteLine("Welcome to Grand Circus Numeric Validator!");
             Console.WriteLine("Please enter your name: ");
             string name = Console.ReadLine();
             int cont = 1;
