@@ -15,27 +15,21 @@ namespace Lab3
             // Entry Validation
             Console.WriteLine("Enter a number between 1 and 100");
             string input = Console.ReadLine();
-
-
-
             int i = 0;
 
             while (validcheck == 1)
             {
-
                 if (input.All(char.IsNumber)){
                     validcheck = 0;
                 }
                 else
                 {
-                    
                     validcheck = 2;
                 }
 
                 if (validcheck != 2)
                 {
                     i = int.Parse(input);
-
                     if (input.All(char.IsDigit))
                     {
                         validcheck = 0;
@@ -44,14 +38,14 @@ namespace Lab3
                     {
                         validcheck = 0;
                     }
-                }
-                else
-                {
+                    }
+                    else
+                    {
                     Console.WriteLine("invalid entry, please try again");
                     Console.WriteLine("Enter a number between 1 and 100");
                     input = Console.ReadLine();
                     i = int.Parse(input);
-                }
+                    }
 
            //OddEven Results
                 int oddeven = 0;
@@ -96,7 +90,6 @@ namespace Lab3
                      input = Console.ReadLine();
                      i = int.Parse(input);
                     validcheck = 1;
-
                 }
                 else
                 {
