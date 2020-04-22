@@ -100,7 +100,7 @@ namespace Lab3
                     if (proceed.ToLower() == "y")
                     {
                         cont = 1;
-                        cont2 = 2;
+                        cont2 = 0;
                     }
                     if (proceed.ToLower() == "n")
                     {
@@ -121,7 +121,7 @@ namespace Lab3
                     if (proceed.ToLower() == "yes")
                     {
                         cont = 1;
-                        cont2 = 2;
+                        cont2 = 0;
                     }
                     if (cont2 == 1)
                     {
