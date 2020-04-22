@@ -35,22 +35,26 @@ namespace Lab3
                     if (validcheck != 2)
                     {
                         i = int.Parse(input);
-    
+
                     }
+
                     if (i >= 1 && i <= 100)
                     {
                         validcheck2 = 0;
                     }
+                    else
+                    { validcheck = 2; }
 
+                  
                     if (validcheck == 2 || validcheck2 == 2)
-                        {
+                    {
                         validcheck = 1;
                         validcheck2 = 1;
                         Console.WriteLine("invalid entry, please try again");
                         Console.WriteLine("Enter a number between 1 and 100");
                         input = Console.ReadLine();
                     }
-                    
+
                 }
 
                 //OddEven Variable
@@ -89,24 +93,26 @@ namespace Lab3
 
                     //Continue variable
                     if (proceed.ToLower() == "y")
-                    { 
-                        cont2 = 2; 
+                    {
+                        cont = 1;
+                        cont2 = 2;
                     }
                     if (proceed.ToLower() == "n")
                     {
                         cont = 0;
-                        cont2 = 1;
+                        cont2 = 0;
                         break;
                     }
                     if (proceed.ToLower() == "no")
                     {
                         cont = 0;
-                        cont2 = 1;
+                        cont2 = 0;
                         break;
                     }
                     if (proceed.ToLower() == "yes")
-                    { 
-                        cont2 = 2; 
+                    {
+                        cont = 1;
+                        cont2 = 2;
                     }
                     if (cont2 == 1)
                     {
@@ -119,6 +125,7 @@ namespace Lab3
         }
     }
 }
+
 
 
 
