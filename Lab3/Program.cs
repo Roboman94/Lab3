@@ -65,22 +65,27 @@ namespace Lab3
                 if (oddeven == 2 && i >= 2 && i <= 25)
                 {
                     Console.WriteLine($"{name}, the number you entered {i} is even and less than 25!");
+                    Console.WriteLine();
                 }
                 else if (oddeven == 2 && i >= 26 && i <= 60)
                 {
                     Console.WriteLine($"{name}, the number you entered {i} is even and more than 26!");
+                    Console.WriteLine();
                 }
                 else if (oddeven == 2 && i >= 60)
                 {
                     Console.WriteLine($"{name}, the number you entered {i} is more than 60 and an even number!");
+                    Console.WriteLine();
                 }
                 else if (oddeven == 1 && i >= 60)
                 {
                     Console.WriteLine($"{name}, the number you entered {i} is more than 60 and an odd number!");
+                    Console.WriteLine();
                 }
                 else if (oddeven == 1)
                 {
                     Console.WriteLine($"{name}, the number you entered {i} is odd");
+                    Console.WriteLine();
                 }
 
                 int cont2 = 1;
