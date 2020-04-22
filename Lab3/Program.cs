@@ -117,7 +117,6 @@ namespace Lab3
                     if (cont2 == 1)
                     {
                         Console.WriteLine("invalid entry! please try again.");
-                        cont2 = 1;
                         Console.WriteLine();
                     }
                 }
