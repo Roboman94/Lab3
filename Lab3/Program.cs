@@ -7,7 +7,7 @@ namespace Lab3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Grand Circus Numeric Validator!");
+            Console.WriteLine("Welcome to Grand Circus Decision Validator!");
             Console.WriteLine("Please enter your name: ");
             string name = Console.ReadLine();
             int cont = 1;
@@ -101,12 +101,16 @@ namespace Lab3
                     {
                         cont = 0;
                         cont2 = 0;
+                        Console.WriteLine("thank you for using the Decision Maker!");
+                        Console.WriteLine();
                         break;
                     }
                     if (proceed.ToLower() == "no")
                     {
                         cont = 0;
                         cont2 = 0;
+                        Console.WriteLine("thank you for using the Decision Maker!");
+                        Console.WriteLine();
                         break;
                     }
                     if (proceed.ToLower() == "yes")
